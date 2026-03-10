@@ -28,6 +28,16 @@ function currentTime() {
         seconds = "0" + seconds;
     }
 
+    let evenSeconds = seconds % 2;
+    if (evenSeconds === 0) {
+        document.getElementById("c1").style.color = "red";
+        document.getElementById("c2").style.color = "red";
+    }
+    if (evenSeconds === 1) {
+        document.getElementById("c1").style.color = "black";
+        document.getElementById("c2").style.color = "black";
+    }
+
 
     // Display the HTML
     document.getElementById("weekday").innerHTML = daysoftheweek[theDay];
