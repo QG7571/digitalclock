@@ -30,12 +30,12 @@ function currentTime() {
 
     let evenSeconds = seconds % 2;
     if (evenSeconds === 0) {
-        document.getElementById("c1").style.color = "red";
-        document.getElementById("c2").style.color = "red";
+        document.getElementById("c1").style.color = "limegreen";
+        document.getElementById("c2").style.color = "limegreen";
     }
     if (evenSeconds === 1) {
-        document.getElementById("c1").style.color = "black";
-        document.getElementById("c2").style.color = "black";
+        document.getElementById("c1").style.color = "darkgreen";
+        document.getElementById("c2").style.color = "darkgreen";
     }
 
 

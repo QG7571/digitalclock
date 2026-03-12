@@ -8,9 +8,42 @@ main {
     display: flex;
     justify-content: center;
     align-items: center;
+    /* Bit fancy, but I thought it'd be a cool test of my skills.  Plus, The Matrix is just awesome */
+    background-image: url(../images/coderain.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-blend-mode: multiply;
+    color: lime;
 }
 .digitalclock {
     display: flex;
     gap: 9px;
     font-size: 270%;
+}
+header {
+    padding: 2vh;
+    background-color: darkgreen;
+    color: limegreen;
+}
+footer {
+    padding: 2vh;
+    background-color: black;
+    color: limegreen;
+}
+footer p {
+    text-align: center;
+}
+
+
+
+/* Media Query */
+@media only screen and (max-width: 767px) {
+    .digitalclock {
+        flex-direction: column;
+        align-items: center;
+        font-size: 370%;
+    }
+    #c1, #c2, #c3 {
+        display: none;
+    }
 }
